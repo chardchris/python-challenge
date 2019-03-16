@@ -20,6 +20,6 @@ avgchange = statistics.mean(change)
       
 print(f'Total Months: {len(months)}')
 print(f'Total: ${sum(profit)}')
-print(f'Average Change: ${avgchange}')
+print(f'Average Change: ${round(avgchange,2)}')
 print(f'Greatest increase in profits: {months[change.index(max(change))+1]} ${max(change)}')
 print(f'Greatest decrease in profits: {months[change.index(min(change))+1]} ${min(change)}')
